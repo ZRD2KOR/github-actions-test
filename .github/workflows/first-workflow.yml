@@ -1,8 +1,8 @@
-name: First Workflow
+name: Workflow Test
 on: [push]
 
-jobs:
-  run-shell-commands:
+jobs: 
+  run-shell-commads:
     runs-on: ubuntu-latest
     steps:
       - name: echo a string
