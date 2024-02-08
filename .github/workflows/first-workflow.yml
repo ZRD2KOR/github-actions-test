@@ -1,27 +1,9 @@
-name: Workflow Test
+name: Logging workflow
 on: [push]
 
-jobs: 
-  run-shell-commads:
+jobs:
+  testing-wf-commands:
     runs-on: ubuntu-latest
     steps:
-      - name: echo a string
-        run: echo "Hello World"
-      - name: Multiline Command
-        run: |
-          node -v
-          npm -v
-  parallel-jobs-macos:
-    runs-on: macos-latest
-    steps:
-      - name: View SW Version
-        run: sw_vers
-
-  dependent-job:
-    runs-on: windows-latest
-    needs: run-shell-commads
-    steps:
-      - name: echo a string
-        run: Write-Output "Windows String"
-      - name: Error Step
-        run: doesnotexistss
+      - name: Setting an error message
+        run: echo "::error::Missing semicolon"
