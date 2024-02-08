@@ -8,11 +8,11 @@ jobs:
       - name: Setting up error
         run: echo "::error::Missing semicolon"
       - name: Setting up warning with params
-        run: echo "::warning tile:not required Semocolon in line no2::Missing colon"
+        run: echo "::warning title=Required Semocolon in line no2::Missing colon"
       - name: Setting up debug
         run: echo "::debug::Missing semicolon"
       - name: Setting up notice with params
-        run: echo "::notice tile:not required Semocolon in line no2::Missing colon"
+        run: echo "::notice title=Required Semocolon in line no2::Missing colon"
       - name: Group of logs
         run: |
           echo "::group::My Group Title"
