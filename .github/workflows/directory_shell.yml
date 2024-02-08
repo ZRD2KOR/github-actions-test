@@ -11,3 +11,14 @@ jobs:
           echo "$GITHUB_SHA"
           echo "$GITHUB_REPOSITORY"
           echo "$GITHUB_WORKSPACE"
+
+  display-wd-info-windows:
+    runs-on: windows-latest
+    steps:
+      - name: Display working directory & list files
+        run : |
+          pwd
+          ls -al
+          echo "$GITHUB_SHA"
+          echo "$GITHUB_REPOSITORY"
+          echo "$GITHUB_WORKSPACE"
