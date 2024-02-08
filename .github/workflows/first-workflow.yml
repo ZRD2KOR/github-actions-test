@@ -7,5 +7,9 @@ jobs:
     steps:
       - name: Setting up error
         run: echo "::error::Missing semicolon"
-      - name: Setting up error with params
-        run: echo "::error tile:not required Semocolon in line no2::Missing colon"
+      - name: Setting up warning with params
+        run: echo "::warning tile:not required Semocolon in line no2::Missing colon"
+      - name: Setting up debug
+        run: echo "::debug::Missing semicolon"
+      - name: Setting up notice with params
+        run: echo "::notice tile:not required Semocolon in line no2::Missing colon"
