@@ -28,6 +28,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Display working directory & list files
+        shell: pwsh
         run : |
           Get-location
           dir
