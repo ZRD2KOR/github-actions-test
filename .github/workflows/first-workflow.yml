@@ -13,3 +13,12 @@ jobs:
         run: echo "::debug::Missing semicolon"
       - name: Setting up notice with params
         run: echo "::notice tile:not required Semocolon in line no2::Missing colon"
+      - name: Group of logs
+        run: |
+          echo "::group::My Group Title"
+          echo "INSIDE GROUP"
+          echo "::endgroup::"
+      - name: Masking a value
+        run: echo "::add-mask::Secret String"
+      - name: Echo a secret
+        run: echo "Secret String"
