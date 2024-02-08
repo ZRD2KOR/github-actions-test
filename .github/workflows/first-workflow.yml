@@ -6,6 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setting up error
-        run: echo "::error::Missing Semocolon in line no2"
+        run: echo "::error::Missing semicolon"
       - name: Setting up error with params
         run: echo "::error tile:not required Semocolon in line no2::Missing colon"
