@@ -24,13 +24,13 @@ jobs:
           echo "$GITHUB_REPOSITORY"
           echo "$GITHUB_WORKSPACE"
 
-#   display-wd-info-windows2:
-#     runs-on: windows-latest
-#     steps:
-#       - name: Display working directory & list files
-#         run : |
-#           Get-location
-#           dir
-#           echo "$env.GITHUB_SHA"
-#           echo "$env.GITHUB_REPOSITORY"
-#           echo "$env.GITHUB_WORKSPACE"
+  display-wd-info-windows2:
+    runs-on: windows-latest
+    steps:
+      - name: Display working directory & list files
+        run : |
+          Get-location
+          dir
+          echo "$env.GITHUB_SHA"
+          echo "$env.GITHUB_REPOSITORY"
+          echo "$env.GITHUB_WORKSPACE"
