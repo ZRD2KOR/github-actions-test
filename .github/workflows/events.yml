@@ -5,7 +5,6 @@ jobs:
   checkout-test:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
       - run: |
           echo $GITHUB_SHA
           echo $GITHUB_REF
