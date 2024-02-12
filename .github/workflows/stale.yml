@@ -1,4 +1,4 @@
-name: Stale Isuses & PR
+name: Stale Isuses & PRs
 on: 
     schedule:
         - cron: "* * * * *"
