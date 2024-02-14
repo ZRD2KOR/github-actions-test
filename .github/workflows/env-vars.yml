@@ -2,7 +2,7 @@ name: Environment Varibles
 on: [push]
 
 jobs:
-  env-vars-and -context:
+  env-vars-and-context:
     runs-on: ubuntu-latest
     steps:
       - name: Env Log
