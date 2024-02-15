@@ -18,6 +18,10 @@ jobs:
           cat /etc/os-release
       - name: Log ENV
         run : echo $API_URL
+
+      - name: Create a sample file
+        run: echo 'Random Text' > sample.txt
+
       - name: Container in a step
         uses: docker://node:18.16-alpine3.17
         with:
@@ -27,3 +31,9 @@ jobs:
         uses: docker://node:18.16-alpine3.17
         with:
             args: -v
+
+      - name: Show Sample File Contents
+        uses: docker://node:18.16-alpine3.17
+        with:
+            entrypoint: cat 
+            args: sample.txt
